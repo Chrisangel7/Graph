@@ -1,11 +1,25 @@
+import java.util.ArrayList;
 public class RunMyProgram {
     public static void main(String[] args) {
-      Point[] data;
-      data= new Point[10];
 
-      Point myPoint;
-      myPoint= new Point((int)Math.random()*2+7);
-      myPoint.print();
+        RunMyProgram myApp= new RunMyProgram();
+
+    }
+public RunMyProgram(){
+    Point[] data;
+    data= new Point[10];
+    makeErrorData();
+}
+
+    public void render(){
+
+    }
+    public void makeErrorData(){
+        for(int i =0; i <10; i++){
+            Point myPoint= new Point(i);
+            myPoint.print();
+
+        }
     }
 
 }

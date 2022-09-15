@@ -1,11 +1,11 @@
 public class Point {
-    public int x, y;
+    public int y, x;
     public Point (int px){
         x=px;
-        y=2*x+7;
+        y=(px*2+7)+(int)(Math.random()*8-4);
     }
 
     public void print(){
-        System.out.println("my X is = "+x +" my y is = "+y);
+        System.out.println("my X is = "+x +" my y is = "+ y );
     }
 }
